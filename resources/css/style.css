@@ -41,7 +41,9 @@ ul {
 li {
   margin: 1rem 2rem 1rem 0;
 }
-
+nav p {
+  display: none;
+}
 h1 {
   font-weight: bold;
   font-size: 2rem;
@@ -60,7 +62,6 @@ header .container {
 
 #services.container {
   justify-content: center;
-  padding: 3rem;
 }
 .service {
   height: 8rem;
@@ -70,7 +71,7 @@ header .container {
   align-items: center;
   width: 5rem;
   text-align: center;
-  margin: 0 3rem;
+  margin: 3rem;
 }
 
 .service img {
@@ -104,4 +105,88 @@ footer {
 
 footer .logo {
   padding: 4rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  header {
+    padding-top: 0;
+  }
+  h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    left: -2rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .logo p {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  nav p {
+    display: block;
+    margin: 1rem 2rem 1rem 0;
+    font-size: 1rem;
+  }
+  header {
+    height: 17rem;
+  }
+  h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    position: static;
+    text-align: center;
+    margin-top: 9rem;
+  }
+  p {
+    font-size: 0.77rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #services.container {
+    padding: 3.77rem 0;
+  }
+  .service {
+    height: auto;
+    margin: 0;
+  }
+  .service p {
+    margin: 1rem 0 1.54rem 0;
+  }
+  .value {
+    width: 100%;
+    padding: 0;
+  }
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .value p {
+    margin: 1rem 0.25rem 4rem 0.25rem;
+  }
+  footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  footer .logo img{
+    margin: 0 ;
+    display: inline;
+}
 }
